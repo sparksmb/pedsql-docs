@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @document.name %>
+</p>
+
+<p>
+  <strong>Web file name:</strong>
+  <%= @document.web_file_name %>
+</p>
+
+<p>
+  <strong>Uploaded file name:</strong>
+  <%= @document.uploaded_file_name %>
+</p>
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>
