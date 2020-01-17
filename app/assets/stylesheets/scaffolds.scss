@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #f0f5f7;
   color: #333;
   margin: 33px; }
 
@@ -7,6 +7,11 @@ body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
 
 pre {
   background-color: #eee;
@@ -23,11 +28,39 @@ a:hover {
   color: #fff;
   background-color: #000; }
 
+table {
+  border-collapse: collapse;
+  margin: 0 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
 th {
-  padding-bottom: 5px; }
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00a5db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fbfcfd;
+}
 
 td {
-  padding: 0 5px 7px; }
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.action {
+  text-align: center;
+  width: 20%;
+}
 
 div.field,
 div.actions {
