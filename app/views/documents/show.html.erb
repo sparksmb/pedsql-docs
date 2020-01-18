@@ -1,19 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @document.name %>
-</p>
+<h1><%= @document.name %></h1>
 
-<p>
-  <strong>Web file name:</strong>
-  <%= @document.web_file_name %>
-</p>
+<div class="modal">
+<%= image_tag @document.file_icon, size: '48x48' %>
+  <p>
+    <strong>Web file name:</strong>
+    <%= @document.web_file_name %>
+  </p>
 
-<p>
-  <strong>Uploaded file name:</strong>
-  <%= @document.uploaded_file_name %>
-</p>
+  <p>
+    <strong>Uploaded file name:</strong>
+    <%= @document.uploaded_file_name %>
+  </p>
 
-<%= link_to 'Edit', edit_document_path(@document) %> |
-<%= link_to 'Back', documents_path %>
+  <p>
+    <strong>Last Uploaded:</strong>
+    <%= @document.updated_at.strftime("%m/%d/%Y %I:%M %P") %>
+  </p>
+
+  <%= link_to 'Close', documents_path %>
+</div>
+
