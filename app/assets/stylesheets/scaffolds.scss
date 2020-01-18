@@ -57,9 +57,14 @@ td {
   font-size: 15px;
 }
 
-.action {
+.small-col {
+  width: 15%;
   text-align: center;
-  width: 20%;
+}
+
+.action {
+  width: 10%;
+  text-align: center;
 }
 
 div.field,
