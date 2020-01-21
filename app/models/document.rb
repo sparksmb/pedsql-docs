@@ -1,4 +1,7 @@
 class Document < ApplicationRecord
+
+  has_one_attached :file
+
   def file_ext
     ".#{self.web_file_name.split(".").last}"
   end

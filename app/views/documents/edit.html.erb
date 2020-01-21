@@ -1,6 +1,8 @@
-<h1>Editing Document</h1>
+<h1><%= @document.name %></h1>
 
-<%= render 'form', document: @document %>
+<div class="modal">
+  <%= render 'form', document: @document %>
 
-<%= link_to 'Show', @document %> |
-<%= link_to 'Back', documents_path %>
+  <%= link_to 'Show', @document %> |
+  <%= link_to 'Back', documents_path %>
+</div>
