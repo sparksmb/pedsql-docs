@@ -19,7 +19,12 @@
     <%= @document.updated_at.strftime("%m/%d/%Y %I:%M %P") %>
   </p>
 
-  <%= link_to 'Close', documents_path %>
+  <% if @document.file.attached? %>
+    <%= link_to 'Download File', rails_blob_path(@document.file, disposition: 'attachment') %>
+    <br/>
+  <% end %>
   <%= link_to 'Upload New File', edit_document_path %>
+  <br/>
+  <%= link_to 'Close', documents_path %>
 </div>
 
